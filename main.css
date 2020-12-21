@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header, 
+nav, 
+nav a, 
+.image-container, 
+.welcome, 
+.card-container, 
+.card-group,
+.card {
+    display: flex;
+}
+
+header {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+header nav {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+}
+
+header nav a {
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 50px;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    border-top: 3px solid black;
+    background-color: #13A5C3;
+    color: white;
+}
+
+.image-container {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background-image: url(img/images/HomeDesktopheader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.image-container span {
+    position: relative;
+    bottom: 100px;
+    font-size: 50px;
+    color: white;
+}
+
+.shadow {
+    position: relative;
+    bottom: 30px;
+    width: 800px;
+    height: 100px;
+    padding: 20px 10px;
+    font-size: 50px;
+    color: white;
+    background-color: black;
+    opacity: 0.4;
+}
+
+.welcome {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 100px;
+}
+
+.welcome h2 {
+    color:  #13A5C3;
+}
+
+.welcome p {
+    line-height: 20px;
+    color: #666F70;
+    text-align: justify;
+}
+
+.card-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 50px;
+    background-color: whitesmoke;
+}
+
+.card-container h3 {
+    margin-bottom: 30px;
+    color: #666F70;
+}
+
+.card-group {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.card {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    height: 250px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+}
+
+@media screen and (max-width: 1300px) {
+    .image-container span {
+        font-size: 25px;
+    }
+
+    .shadow {
+        width: 400px;
+    }
+
+    .card-container .card-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-container .card-group .card {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .image-container {
+        height: 600px;
+    }
+
+    .welcome {
+        padding: 0 400px;
+    }
+
+    .card-container .card-group {
+        padding: 0 200px;
+    }
+}
